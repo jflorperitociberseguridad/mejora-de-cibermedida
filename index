@@ -1,0 +1,385 @@
+```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CiberMedida - Seguridad Cibernética de Vanguardia</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#06b6d4',
+                        secondary: '#8b5cf6',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #0f172a 0%, #7e22ce 50%, #0f172a 100%);
+            min-height: 100vh;
+        }
+        .nav-active {
+            color: #06b6d4 !important;
+        }
+        .service-card:hover {
+            transform: translateY(-5px);
+            border-color: rgba(6, 182, 212, 0.3) !important;
+        }
+        .stat-number {
+            background: linear-gradient(90deg, #06b6d4, #8b5cf6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+    </style>
+</head>
+<body class="bg-slate-900">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-black/20 backdrop-blur-md z-50 border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center space-x-2">
+                    <i class="fas fa-shield-alt text-cyan-400 text-xl"></i>
+                    <span class="text-xl font-bold text-white">CiberMedida</span>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="text-sm font-medium text-gray-300 hover:text-white nav-link">Inicio</a>
+                    <a href="#services" class="text-sm font-medium text-gray-300 hover:text-white nav-link">Servicios</a>
+                    <a href="#about" class="text-sm font-medium text-gray-300 hover:text-white nav-link">Nosotros</a>
+                    <a href="#contact" class="text-sm font-medium text-gray-300 hover:text-white nav-link">Contacto</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-button" class="md:hidden text-white">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <div id="mobile-menu" class="hidden md:hidden py-4 border-t border-white/10">
+                <a href="#home" class="block w-full text-left py-2 text-gray-300 hover:text-white nav-link">Inicio</a>
+                <a href="#services" class="block w-full text-left py-2 text-gray-300 hover:text-white nav-link">Servicios</a>
+                <a href="#about" class="block w-full text-left py-2 text-gray-300 hover:text-white nav-link">Nosotros</a>
+                <a href="#contact" class="block w-full text-left py-2 text-gray-300 hover:text-white nav-link">Contacto</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="pt-20 pb-16 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center">
+                <h1 class="text-4xl md:text-6xl font-bold text-white mb-6">
+                    Seguridad Cibernética
+                    <span class="block bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent">
+                        de Vanguardia
+                    </span>
+                </h1>
+                <p class="text-xl text-gray-300 mb-8 max-w-3xl mx-auto">
+                    Protegemos su negocio digital con soluciones avanzadas de ciberseguridad, 
+                    garantizando la integridad, confidencialidad y disponibilidad de sus activos digitales.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="#contact" class="bg-gradient-to-r from-cyan-500 to-purple-600 text-white px-8 py-3 rounded-lg font-semibold hover:from-cyan-600 hover:to-purple-700 transition-all transform hover:scale-105">
+                        Solicitar Consulta
+                    </a>
+                    <a href="#services" class="border border-cyan-400 text-cyan-400 px-8 py-3 rounded-lg font-semibold hover:bg-cyan-400 hover:text-white transition-all">
+                        Nuestros Servicios
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="py-8 bg-black/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <div class="text-3xl md:text-4xl font-bold stat-number mb-2">500+</div>
+                    <div class="text-gray-300">Clientes Protegidos</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-3xl md:text-4xl font-bold stat-number mb-2">99.9%</div>
+                    <div class="text-gray-300">Tiempo de Actividad</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-3xl md:text-4xl font-bold stat-number mb-2">24/7</div>
+                    <div class="text-gray-300">Soporte Técnico</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-3xl md:text-4xl font-bold stat-number mb-2">15+</div>
+                    <div class="text-gray-300">Años de Experiencia</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Nuestros Servicios</h2>
+                <p class="text-xl text-gray-300 max-w-3xl mx-auto">
+                    Soluciones integrales de ciberseguridad diseñadas para proteger su negocio 
+                    en el entorno digital actual.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10 service-card">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-shield-alt text-cyan-400 text-xl mr-3"></i>
+                        <h3 class="text-xl font-semibold text-white">Ciberseguridad Integral</h3>
+                    </div>
+                    <p class="text-gray-300 mb-4">Protección completa contra amenazas digitales con soluciones avanzadas de seguridad.</p>
+                    <ul class="space-y-2">
+                        <li class="flex items-center text-gray-400"><i class="fas fa-chevron-right text-cyan-400 text-xs mr-2"></i> Firewalls</li>
+                        <li class="flex items-center text-gray-400"><i class="fas fa-chevron-right text-cyan-400 text-xs mr-2"></i> Antivirus</li>
+                        <li class="flex items-center text-gray-400"><i class="fas fa-chevron-right text-cyan-400 text-xs mr-2"></i> Monitoreo 24/7</li>
+                        <li class="flex items-center text-gray-400"><i class="fas fa-chevron-right text-cyan-400 text-xs mr-2"></i> Respuesta a incidentes</li>
+                    </ul>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10 service-card">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-lock text-cyan-400 text-xl mr-3"></i>
+                        <h3 class="text-xl font-semibold text-white">Auditorías de Seguridad</h3>
+                    </div>
+                    <p class="text-gray-300 mb-4">Evaluación exhaustiva de su infraestructura para identificar vulnerabilidades.</p>
+                    <ul class="space-y-2">
+                        <li class="flex items-center text-gray-400"><i class="fas fa-chevron-right text-cyan-400 text-xs mr-2"></i> Análisis de riesgos</li>
+                        <li class="flex items-center text-gray-400"><i class="fas fa-chevron-right text-cyan-400 text-xs mr-2"></i> Pruebas de penetración</li>
+                        <li class="flex items-center text-gray-400"><i class="fas fa-chevron-right text-cyan-400 text-xs mr-2"></i> Cumplimiento normativo</li>
+                        <li class="flex items-center text-gray-400"><i class="fas fa-chevron-right text-cyan-400 text-xs mr-2"></i> Reportes detallados</li>
+                    </ul>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10 service-card">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-chart-line text-cyan-400 text-xl mr-3"></i>
+                        <h3 class="text-xl font-semibold text-white">Gestión de Riesgos</h3>
+                    </div>
+                    <p class="text-gray-300 mb-4">Estrategias proactivas para minimizar y gestionar riesgos cibernéticos.</p>
+                    <ul class="space-y-2">
+                        <li class="flex items-center text-gray-400"><i class="fas fa-chevron-right text-cyan-400 text-xs mr-2"></i> Evaluación de amenazas</li>
+                        <li class="flex items-center text-gray-400"><i class="fas fa-chevron-right text-cyan-400 text-xs mr-2"></i> Planificación de contingencias</li>
+                        <li class="flex items-center text-gray-400"><i class="fas fa-chevron-right text-cyan-400 text-xs mr-2"></i> Seguros cibernéticos</li>
+                        <li class="flex items-center text-gray-400"><i class="fas fa-chevron-right text-cyan-400 text-xs mr-2"></i> Formación continua</li>
+                    </ul>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10 service-card">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-globe-americas text-cyan-400 text-xl mr-3"></i>
+                        <h3 class="text-xl font-semibold text-white">Transformación Digital Segura</h3>
+                    </div>
+                    <p class="text-gray-300 mb-4">Implementación de tecnologías modernas con seguridad integrada desde el inicio.</p>
+                    <ul class="space-y-2">
+                        <li class="flex items-center text-gray-400"><i class="fas fa-chevron-right text-cyan-400 text-xs mr-2"></i> Cloud seguro</li>
+                        <li class="flex items-center text-gray-400"><i class="fas fa-chevron-right text-cyan-400 text-xs mr-2"></i> IoT protegido</li>
+                        <li class="flex items-center text-gray-400"><i class="fas fa-chevron-right text-cyan-400 text-xs mr-2"></i> Automatización segura</li>
+                        <li class="flex items-center text-gray-400"><i class="fas fa-chevron-right text-cyan-400 text-xs mr-2"></i> Arquitectura resiliente</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 px-4 sm:px-6 lg:px-8 bg-black/20">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">Sobre CiberMedida</h2>
+                    <p class="text-gray-300 mb-6">
+                        Somos una empresa especializada en ciberseguridad con más de 15 años de experiencia 
+                        protegiendo a empresas de todos los tamaños. Nuestro equipo de expertos en seguridad 
+                        trabaja incansablemente para mantener sus sistemas seguros frente a las amenazas 
+                        cibernéticas en constante evolución.
+                    </p>
+                    <p class="text-gray-300 mb-8">
+                        Nos comprometemos a proporcionar soluciones personalizadas que se adapten a las 
+                        necesidades específicas de cada cliente, combinando tecnología de vanguardia con 
+                        conocimientos expertos en seguridad.
+                    </p>
+                    
+                    <div class="flex items-center space-x-6">
+                        <div class="flex items-center">
+                            <i class="fas fa-award text-cyan-400 mr-2"></i>
+                            <span class="text-gray-300">Certificaciones Internacionales</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-users text-cyan-400 mr-2"></i>
+                            <span class="text-gray-300">Equipo de Expertos</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="relative">
+                    <div class="bg-gradient-to-br from-cyan-500/20 to-purple-600/20 rounded-2xl p-8 h-96 flex items-center justify-center">
+                        <i class="fas fa-shield-alt text-cyan-400 text-6xl opacity-50"></i>
+                    </div>
+                    <div class="absolute -top-4 -right-4 bg-gradient-to-r from-cyan-500 to-purple-600 rounded-lg p-4">
+                        <i class="fas fa-chart-line text-white text-2xl"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Contáctenos</h2>
+                <p class="text-xl text-gray-300 max-w-3xl mx-auto">
+                    ¿Listo para proteger su negocio? Nuestro equipo está aquí para ayudarle a implementar 
+                    las mejores prácticas de ciberseguridad.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-12">
+                <div class="space-y-8">
+                    <div class="flex items-start space-x-4">
+                        <i class="fas fa-phone text-cyan-400 text-lg mt-1"></i>
+                        <div>
+                            <h3 class="text-white font-semibold mb-1">Teléfono</h3>
+                            <p class="text-gray-300">+34 91 123 45 67</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start space-x-4">
+                        <i class="fas fa-envelope text-cyan-400 text-lg mt-1"></i>
+                        <div>
+                            <h3 class="text-white font-semibold mb-1">Email</h3>
+                            <p class="text-gray-300">info@cibermedida.es</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start space-x-4">
+                        <i class="fas fa-map-marker-alt text-cyan-400 text-lg mt-1"></i>
+                        <div>
+                            <h3 class="text-white font-semibold mb-1">Dirección</h3>
+                            <p class="text-gray-300">Madrid, España</p>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10">
+                        <h3 class="text-white font-semibold mb-4">Horario de Atención</h3>
+                        <p class="text-gray-300">Lunes a Viernes: 9:00 - 18:00</p>
+                        <p class="text-gray-300">Soporte 24/7 para clientes</p>
+                    </div>
+                </div>
+                
+                <form class="space-y-6">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <input
+                            type="text"
+                            placeholder="Nombre"
+                            class="bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white placeholder-gray-400 focus:outline-none focus:border-cyan-400"
+                        >
+                        <input
+                            type="email"
+                            placeholder="Email"
+                            class="bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white placeholder-gray-400 focus:outline-none focus:border-cyan-400"
+                        >
+                    </div>
+                    <input
+                        type="text"
+                        placeholder="Empresa"
+                        class="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white placeholder-gray-400 focus:outline-none focus:border-cyan-400"
+                    >
+                    <textarea
+                        rows="4"
+                        placeholder="Mensaje"
+                        class="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white placeholder-gray-400 focus:outline-none focus:border-cyan-400"
+                    ></textarea>
+                    <button
+                        type="submit"
+                        class="w-full bg-gradient-to-r from-cyan-500 to-purple-600 text-white px-8 py-3 rounded-lg font-semibold hover:from-cyan-600 hover:to-purple-700 transition-all"
+                    >
+                        Enviar Mensaje
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black/40 border-t border-white/10 py-8 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="flex items-center space-x-2 mb-4 md:mb-0">
+                    <i class="fas fa-shield-alt text-cyan-400"></i>
+                    <span class="text-white font-semibold">CiberMedida</span>
+                </div>
+                <div class="text-gray-400 text-sm">
+                    © 2024 CiberMedida. Todos los derechos reservados.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                    
+                    // Close mobile menu if open
+                    const mobileMenu = document.getElementById('mobile-menu');
+                    mobileMenu.classList.add('hidden');
+                }
+            });
+        });
+
+        // Active navigation highlighting
+        window.addEventListener('scroll', function() {
+            const sections = ['home', 'services', 'about', 'contact'];
+            const scrollPosition = window.scrollY + 100;
+            
+            sections.forEach(sectionId => {
+                const section = document.getElementById(sectionId);
+                if (section) {
+                    const { offsetTop, offsetHeight } = section;
+                    const links = document.querySelectorAll(`a[href="#${sectionId}"]`);
+                    
+                    if (scrollPosition >= offsetTop && scrollPosition < offsetTop + offsetHeight) {
+                        links.forEach(link => link.classList.add('nav-active'));
+                    } else {
+                        links.forEach(link => link.classList.remove('nav-active'));
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>
+```
